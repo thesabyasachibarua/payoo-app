@@ -12,8 +12,8 @@
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
      <link rel="stylesheet" href="/style.css">
 </head>
-<body class="bg-[#F4F5F7] h-[100vh]">
-    <div class="max-w-lg m-auto bg-white rounded-b-xl ">
+<body class="bg-[#F4F5F7]">
+    <div class="max-w-lg m-auto bg-white rounded-b-xl mb-8">
         <header class="flex border-b-1 border-gray-300 justify-between  items-center py-3 px-3">
         <div class="flex items-center">
             <img class="h-[50px] mr-2" src="./assets/Group.png" alt="">
@@ -58,6 +58,40 @@
             </div>
         </div>
     </main>
+    </div>
+
+    <!-- add money section -->
+    <div class="max-w-lg m-auto px-6">
+        <h1 class="text-[18px] font-bold mb-4">Add Money</h1>
+        <form class="rounded-3xl p-[32px] bg-white">
+            <div class="mb-4">
+                <label for="" class="font-semibold">Select A Bank</label>
+                <br>
+                <br>
+                <select class="select w-full bg-[#F4F5F7] border-0 rounded-3xl">
+  <option class="">Select Bank</option>
+  <option>Sonali Bank</option>
+  <option>UCBL BANK</option>
+  <option>Janata Bank</option>
+</select>
+            </div>
+            <div class="mb-4">
+                <label for="" class="font-semibold">Bank Account Number</label>
+                <br>
+                <input type="text" placeholder="Enter 11 digit account number" class="input rounded-3xl mt-3 w-full bg-[#F4F5F7] border-0" />
+            </div>
+            <div class="mb-4">
+                <label for="" class="font-semibold">Amount to Add</label>
+                <br>
+                <input type="text" placeholder="Add Amount to withdraw" class="input rounded-3xl mt-3 w-full bg-[#F4F5F7] border-0" />
+            </div>
+            <div class="mb-4">
+                <label for="" class="font-semibold">Pin Number</label>
+                <br>
+                <input type="text" placeholder="Enter 4 digit pin number" class="input rounded-3xl mt-3 w-full bg-[#F4F5F7] border-0" />
+            </div>
+            <button class="btn bg-[#0874F2] w-full rounded-3xl text-white font-[600]" id="btn-login">Add More</button>
+        </form>
     </div>
     
 </body>
