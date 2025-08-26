@@ -20,14 +20,15 @@ document.getElementById('btn-login').addEventListener('click',function(event){
     const inputPinValue = inputPin.value;
 
     const inputNumberConverted = parseInt(inputNumberValue);
-    console.log(inputNumberConverted);
+    // console.log(inputNumberConverted);
     const inputPinValueConverted = parseInt(inputPinValue);
-    console.log(inputPinValueConverted);
+    // console.log(inputPinValueConverted);
 
     if(inputNumberConverted === mobileNumber && inputPinValueConverted === pinNumber){
         window.location.href="./home-page.html";
     }
     else{
-        console.log('wrong credentials');
+        // console.log('wrong credentials');
+        alert('Invalid Credentials');
     }
 })

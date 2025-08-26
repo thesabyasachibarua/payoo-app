@@ -12,21 +12,53 @@
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
      <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-    <header class="flex">
-        <div class="flex">
-            <img src="./assets/Group.png" alt="">
+<body class="bg-[#F4F5F7] h-[100vh]">
+    <div class="max-w-lg m-auto bg-white rounded-b-xl ">
+        <header class="flex border-b-1 border-gray-300 justify-between  items-center py-3 px-3">
+        <div class="flex items-center">
+            <img class="h-[50px] mr-2" src="./assets/Group.png" alt="">
             <div>
-                <h1>$45000</h1>
-                <p>Available Balance</p>
+                <h1 class="text-[18px] font-extrabold">$<span>45000</span></h1>
+                <p class="font-[400] text-[#08080880] text-[14px]">Available Balance</p>
             </div>
         </div>
         <div>
-            <button class="border-2"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</button>
+            <button class="border-1 border-[#0808081A] rounded-[8px] p-2 text-[#08080880]"><i class="fa-solid fa-arrow-right-from-bracket trans rotate-180 text-[#666768]"></i> Log Out</button>
         </div>
     </header>
-    <main>
-
+    <main class="p-4">
+        <div class=" mt-8 px-6 mb-6">
+            <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
+            <p class="font-[400] text-[#08080880] ">Enjoy easy and convenient financial services with us. <br> Cashout charge is low and </p>
+        </div>
+        <div class=" min-h-[200px] grid grid-cols-3 gap-4">
+            <div class=" text-center rounded-[12px] border-1 border-[#0808081A] px-2.5 py-5">
+                <img class="mx-auto" src="./assets/wallet1.png" alt="">
+                <h2>Add Money</h2>
+            </div>
+            <div class="rounded-[12px] border-1 border-[#0808081A] text-center px-2.5 py-5">
+                <img class="mx-auto" src="./assets/send1.png" alt="">
+                <h2>Cashout</h2>
+            </div>
+            <div class="rounded-[12px] border-1 border-[#0808081A] text-center px-2.5 py-5">
+                <img class="mx-auto" src="./assets/money1.png" alt="">
+                <h2>Transfer Money</h2>
+            </div>
+            <div class="rounded-[12px] border-1 border-[#0808081A] text-center px-2.5 py-5">
+                <img class="mx-auto" src="./assets/bonus1.png" alt="">
+                <h2>Get Bonus</h2>
+            </div>
+            <div class="rounded-[12px] border-1 border-[#0808081A] text-center px-2.5 py-5">
+                <img class="mx-auto" src="./assets/purse1.png" alt="">
+                <h2>Pay Bill</h2>
+            </div>
+            <div class="rounded-[12px] border-1 border-[#0808081A] text-center px-2.5 py-5">
+                <img class="mx-auto" src="./assets/transaction1.png" alt="">
+                <h2>Transactions</h2>
+            </div>
+        </div>
     </main>
+    </div>
+    
 </body>
 </html>
