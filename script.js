@@ -25,7 +25,7 @@ document.getElementById('btn-login').addEventListener('click',function(event){
     // console.log(inputPinValueConverted);
 
     if(inputNumberConverted === mobileNumber && inputPinValueConverted === pinNumber){
-        window.location.href="./home-page.html";
+        window.location.href="home-page.html";
     }
     else{
         // console.log('wrong credentials');
