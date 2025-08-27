@@ -3,19 +3,34 @@ console.log('home page connected');
 const validAccountNumber = 01991949385;
 const validPinNumber = 9876;
 
+// reusable functions added:
+
+// functions for accessing value from input converted to INT =>
+
+    function valueAccess(id){
+
+        const inputField = document.getElementById(id);
+        const valueInputField = inputField.value;
+        const intValueInputField = parseInt(valueInputField);
+
+        return intValueInputField;
+
+    }
+
+
+
+
 document.getElementById('btn-add-money').addEventListener('click',function(event){
     event.preventDefault();
     const bankName = document.getElementById('bank').value;
-    const bankAccountNum = parseInt(document.getElementById('bank-account-number').value);
 
-    const addAmount = parseInt(document.getElementById('add-amount').value);
+    const bankAccountNum = valueAccess('bank-account-number');
 
-    const pinNumber = parseInt(document.getElementById('account-pin-number').value);
+    const addAmount = valueAccess('add-amount');
 
-    // console.log(bankName,bankAccountNum,addAmount,pinNumber);
+    const pinNumber = valueAccess('account-pin-number');
 
     const availableBalance = parseInt(document.getElementById('available-balance').innerText);
-    // console.log(availableBalance);
 
     if(bankAccountNum !== validAccountNumber){
         alert('Please provide valid Account Number');
@@ -38,7 +53,7 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
 document.getElementById('btn-withdraw-money').addEventListener('click',function(event){
     event.preventDefault();
 
-    const cashOutAmount = parseInt(document.getElementById('withdraw-amount').value);
+    const cashOutAmount = valueAccess('withdraw-amount');
 
     const availableBalance = parseInt(document.getElementById('available-balance').innerText);
 
@@ -46,7 +61,7 @@ document.getElementById('btn-withdraw-money').addEventListener('click',function(
 
     const agentNumber = document.getElementById('agent-number').value;
 
-    const pinNumber = parseInt(document.getElementById('account-pinnumber').value);
+    const pinNumber = valueAccess('account-pinnumber');
 
     if(agentNumber.length < 11){
         alert('Enter valid Agent Number');
